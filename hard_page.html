@@ -1,0 +1,179 @@
+<!--
+Hard game page: sample game page that includes a 9X9 grid (with the appropriate subgrids).  Each cell should allow numbered inputs between 1-9.  There should also be a timer with a fake time on it 
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Specifies character encoding  -->
+    <meta charset="utf-8">
+    <!-- Viewport to make the website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <!-- Adds style CSS  -->
+
+<style>
+
+  body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;                   /* remove default body margin */
+  min-height: 70dvh;
+  display: flex;
+  flex-direction: column;      /* stack header and board vertically */
+  justify-content: center;     /* center vertically */
+  align-items: center;         /* center horizontally */}
+
+ 
+ /* Square for Sudoku 9x9 */
+   .square {    
+   width: 5vw;         
+   height: 5vw;          
+   border: 2px solid black;}
+
+  .container { 
+  display: flex;}
+
+  .container-right{ 
+  margin-left: 0px;} 
+
+ /* Contains Sudoku squares */
+  .sudoku-board{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* horizontal center */
+  align-items: center;      /* vertical center */}
+
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1em;
+  border: 0.2em solid black;
+  padding: 1em;
+  width: 10vw;
+  height: 5vh;
+  margin-top: 3vh;
+}
+.title {
+  margin-bottom: 2vh;         
+}
+
+</style>
+</head>
+
+<body>
+
+<div = class="title">
+  <h1>Hard Sudoku</h1>
+</div>
+
+<div class="sudoku-board">
+  <div class="container">
+    <div class="square"></div> <!-- 1 -->
+    <div class="square"></div> <!-- 2 -->
+    <div class="square"></div> <!-- 3 -->
+    <div class="square"></div> <!-- 4 -->
+    <div class="square"></div> <!-- 5 -->
+    <div class="square"></div> <!-- 6 -->
+    <div class="square"></div> <!-- 7 -->
+    <div class="square"></div> <!-- 8 -->
+    <div class="square"></div> <!-- 9 -->
+  </div>
+  <div class="container container-right">
+    <div class="square"></div> <!-- 1 -->
+    <div class="square"></div> <!-- 2 -->
+    <div class="square"></div> <!-- 3 -->
+    <div class="square"></div> <!-- 4 -->
+    <div class="square"></div> <!-- 5 -->
+    <div class="square"></div> <!-- 6 -->
+    <div class="square"></div> <!-- 7 -->
+    <div class="square"></div> <!-- 8 -->
+    <div class="square"></div> <!-- 9 -->
+  </div>
+  <div class="container">
+    <div class="square"></div> <!-- 1 -->
+    <div class="square"></div> <!-- 2 -->
+    <div class="square"></div> <!-- 3 -->
+    <div class="square"></div> <!-- 4 -->
+    <div class="square"></div> <!-- 5 -->
+    <div class="square"></div> <!-- 6 -->
+    <div class="square"></div> <!-- 7 -->
+    <div class="square"></div> <!-- 8 -->
+    <div class="square"></div> <!-- 9 -->
+  </div>
+  <div class="container">
+    <div class="square"></div> <!-- 1 -->
+    <div class="square"></div> <!-- 2 -->
+    <div class="square"></div> <!-- 3 -->
+    <div class="square"></div> <!-- 4 -->
+    <div class="square"></div> <!-- 5 -->
+    <div class="square"></div> <!-- 6 -->
+    <div class="square"></div> <!-- 7 -->
+    <div class="square"></div> <!-- 8 -->
+    <div class="square"></div> <!-- 9 -->
+  </div>
+  <div class="container">
+    <div class="square"></div> <!-- 1 -->
+    <div class="square"></div> <!-- 2 -->
+    <div class="square"></div> <!-- 3 -->
+    <div class="square"></div> <!-- 4 -->
+    <div class="square"></div> <!-- 5 -->
+    <div class="square"></div> <!-- 6 -->
+    <div class="square"></div> <!-- 7 -->
+    <div class="square"></div> <!-- 8 -->
+    <div class="square"></div> <!-- 9 -->
+  </div>
+  <div class="container">
+    <div class="square"></div> <!-- 1 -->
+    <div class="square"></div> <!-- 2 -->
+    <div class="square"></div> <!-- 3 -->
+    <div class="square"></div> <!-- 4 -->
+    <div class="square"></div> <!-- 5 -->
+    <div class="square"></div> <!-- 6 -->
+    <div class="square"></div> <!-- 7 -->
+    <div class="square"></div> <!-- 8 -->
+    <div class="square"></div> <!-- 9 -->
+  </div>
+    <div class="container">
+    <div class="square"></div> <!-- 1 -->
+    <div class="square"></div> <!-- 2 -->
+    <div class="square"></div> <!-- 3 -->
+    <div class="square"></div> <!-- 4 -->
+    <div class="square"></div> <!-- 5 -->
+    <div class="square"></div> <!-- 6 -->
+    <div class="square"></div> <!-- 7 -->
+    <div class="square"></div> <!-- 8 -->
+    <div class="square"></div> <!-- 9 -->
+  </div>
+    <div class="container">
+    <div class="square"></div> <!-- 1 -->
+    <div class="square"></div> <!-- 2 -->
+    <div class="square"></div> <!-- 3 -->
+    <div class="square"></div> <!-- 4 -->
+    <div class="square"></div> <!-- 5 -->
+    <div class="square"></div> <!-- 6 -->
+    <div class="square"></div> <!-- 7 -->
+    <div class="square"></div> <!-- 8 -->
+    <div class="square"></div> <!-- 9 -->
+  </div>
+    <div class="container">
+    <div class="square"></div> <!-- 1 -->
+    <div class="square"></div> <!-- 2 -->
+    <div class="square"></div> <!-- 3 -->
+    <div class="square"></div> <!-- 4 -->
+    <div class="square"></div> <!-- 5 -->
+    <div class="square"></div> <!-- 6 -->
+    <div class="square"></div> <!-- 7 -->
+    <div class="square"></div> <!-- 8 -->
+    <div class="square"></div> <!-- 9 -->
+  </div>
+
+
+  <div class="timer">00:59
+  </div>
+
+</div>
+
+</body>
+</html>
