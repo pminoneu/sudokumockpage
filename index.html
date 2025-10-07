@@ -5,6 +5,7 @@ Home Page
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Home Page</title>
     <!-- Adds Bebas Neu Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,64 +14,13 @@ Home Page
     <meta charset="utf-8">
     <!-- Viewport to make the website responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
-
-    <!-- Adds style CSS  -->
-
-<style>
-
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 80vw;
-  margin-left: 150px;}
-
-.bebas-neue-regular {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;}
-
-  body {
-  margin: 0;                   /* remove default body margin */
-  min-height: 70dvh;
-  display: flex;
-  flex-direction: column;      /* stack header and board vertically */
-  justify-content: center;     /* center vertically */
-  align-items: center;         /* center horizontally */}
-
-img{
-  max-width: 100vw;   /* fit by width */
-  max-height: 70vh;  /* and by height */
-  height: auto;
-  width: auto;
-  display: block;
-}
-
-.title {
-  font-size: clamp(2rem, 4vw, 4rem); text-align: center; 
-  margin-bottom: 1vh;}
-
-.sidenav {
-position: fixed; top: 0;
-display: flex; flex-direction: column;
-background: #000;
-padding: 24px 20px;
-gap: 14px;  
-top: 0;          /* Aligns it to the top */
-left: 0;         /* Aligns it to the left */
-width: 180px;
-height: 100vh;
- }
- .sidenav-font {
-    font-size: 30px; text-align: center; 
-    color:white;
-    
- }
+  <!-- CSS Style file -->
+  <link rel="stylesheet" href="style.css">
+  
+<body class ="body.select_game">`
 
 
-</style>
-
-<body>   
+<body class="home_page">   
     <div class="sidenav bebas-neue-regular sidenav-font">
         <a class="active" href="#home">Home</a>
         <a href="#news">Play</a>
@@ -84,8 +34,7 @@ height: 100vh;
     <div class="title bebas-neue-regular">
         <h1>MK's Sudoku</h1>
     </div>    
-<img src="https://raw.githubusercontent.com/pminoneu/sudokumockpage/refs/heads/main/ChatGPT%20Image%20Oct%205%2C%202025%2C%2005_54_38%20PM.png" alt="Sudoku Art">
-</div>   
+<img src="https://raw.githubusercontent.com/pminoneu/sudokumockpage/refs/heads/main/Screenshot%202025-10-06%20at%2020.27.19.png"></div>   
 
 </body>
 </html>
