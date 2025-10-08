@@ -5,61 +5,15 @@ Hard game page: sample game page that includes a 9X9 grid (with the appropriate 
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Hard Page</title>
     <!-- Specifies character encoding  -->
     <meta charset="utf-8">
     <!-- Viewport to make the website responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
-
-    <!-- Adds style CSS  -->
-
-<style>
-
-  body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;                   /* remove default body margin */
-  min-height: 70dvh;
-  display: flex;
-  flex-direction: column;      /* stack header and board vertically */
-  justify-content: center;     /* center vertically */
-  align-items: center;         /* center horizontally */}
-
- 
- /* Square for Sudoku 9x9 */
-   .square {    
-   width: 5vw;         
-   height: 5vw;          
-   border: 2px solid black;}
-
-  .container { 
-  display: flex;}
-
-  .container-right{ 
-  margin-left: 0px;} 
-
- /* Contains Sudoku squares */
-  .sudoku-board{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;  /* horizontal center */
-  align-items: center;      /* vertical center */}
+  <!-- CSS Style file -->
+  <link rel="stylesheet" href="../sudokumockpage/style.css">
 
 
-.timer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 1em;
-  border: 0.2em solid black;
-  padding: 1em;
-  width: 10vw;
-  height: 5vh;
-  margin-top: 3vh;
-}
-.title {
-  margin-bottom: 2vh;         
-}
-
-</style>
 </head>
 
 <body>

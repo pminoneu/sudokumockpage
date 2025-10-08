@@ -1,4 +1,81 @@
 
+/* SCORE BOARD */
+
+.score_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    border: 0.2em solid black;
+    padding: 1em;
+    width: 30vw;
+    height: 7vh;
+    margin-top: 3vh;
+  }
+
+.profile-pic {
+    width: 10vw;
+    height: auto;
+    margin-right: 2vw;
+  }
+
+  .scoreboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+/* HARD PAGE */
+
+  body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;                   /* remove default body margin */
+  min-height: 70dvh;
+  display: flex;
+  flex-direction: column;      /* stack header and board vertically */
+  justify-content: center;     /* center vertically */
+  align-items: center;         /* center horizontally */}
+
+ 
+ /* Square for Sudoku 9x9 */
+   .square {    
+   width: 5vw;         
+   height: 5vw;          
+   border: 2px solid black;}
+
+  .container { 
+  display: flex;}
+
+  .container-right{ 
+  margin-left: 0px;} 
+
+ /* Contains Sudoku squares */
+  .sudoku-board{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* horizontal center */
+  align-items: center;      /* vertical center */}
+
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1em;
+  border: 0.2em solid black;
+  padding: 1em;
+  width: 10vw;
+  height: 5vh;
+  margin-top: 3vh;
+}
+.title {
+  margin-bottom: 2vh;         
+}
+
+
+/*  */
+
 a:link {
     color: white;
     background-color: transparent;
@@ -65,11 +142,10 @@ a:link {
       color:white;
       
    }
+
   
-  
-  
-  
-  body.select_game {
+
+  body.select-game {
   font-family: 'Roboto', sans-serif;
   margin: 0;                   /* remove default body margin */
   min-height: 70dvh;
@@ -110,7 +186,54 @@ a:link {
   height: 5vh;
   margin-top: 3vh;
 }
-.title {
+.title-scoreboard {
+    font-size: clamp(2rem, 4vw, 4rem); 
+    text-align: center;
   margin-bottom: 2vh;         
 }
 
+
+/* Style for button  */
+.button-standard {
+    font-size: clamp(1rem, 2vw, 2rem); 
+    text-align: center;
+    max-width: 80vw;
+    margin-bottom: 2vh;  
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0.5em;
+    background-color: black; /* Blue background */
+    color: white;              /* White text */
+    cursor: pointer;           /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+
+/* Style for text  */
+.text-standard {
+    font-size: clamp(1rem, 2vw, 2rem); 
+    text-align: center;
+    max-width: 80vw;
+    margin-bottom: 2vh;  
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;}
+
+/* Nav Bar responsive design for mobile devices */
+@media (max-width: 1000px) {
+    .sidenav {
+      flex-direction: row;   
+      width: 100%;           
+      height: auto;         
+      padding: 10px 0;       
+      justify-content: space-around;
+    }
+  
+    .sidenav a {
+      font-size: 20px;       
+      padding: 8px;          
+    }
+  }
