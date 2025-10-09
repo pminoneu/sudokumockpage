@@ -79,7 +79,8 @@ a:link {
     background-color: transparent;
     text-decoration: none;
   }
-  a.link-2:link {
+  a.link-2:link,
+  a.link-2:visited {
     color: black;
     background-color: transparent;
     text-decoration: none;
