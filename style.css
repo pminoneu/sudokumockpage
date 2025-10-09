@@ -2,12 +2,10 @@
 /* SCORE BOARD */
 
 .score_box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between; 
     border-radius: 1em;
     border: 0.2em solid black;
-    padding: 1em;
+    padding: 1em 1.5em; 
     width: 30vw;
     height: 7vh;
     margin-top: 3vh;
@@ -22,7 +20,7 @@
   .scoreboard-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+
   }
 
 
@@ -152,12 +150,12 @@ a:link {
 
   body.select-game {
   font-family: 'Roboto', sans-serif;
-  margin: 0;                   /* remove default body margin */
+  margin: 0;                 
   min-height: 70dvh;
   display: flex;
-  flex-direction: column;      /* stack header and board vertically */
-  justify-content: center;     /* center vertically */
-  align-items: center;         /* center horizontally */}
+  flex-direction: column;      
+  justify-content: center;   
+  align-items: center;         }
 
  
  /* Square for Sudoku 9x9 */
@@ -286,4 +284,12 @@ a:link {
         color: #fff;
         cursor: pointer;
         transition: opacity 0.2s ease;
+      }
+
+      .left-text {
+        text-align: left;
+      }
+      
+      .right-text {
+        text-align: right;
       }
