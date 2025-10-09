@@ -237,3 +237,48 @@ a:link {
       padding: 8px;          
     }
   }
+
+  /* Login */
+    .container_login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .uname{
+        background-color: black; 
+        color: white;           
+        padding: 4px 8px;       
+        display: block;    
+    }
+ 
+    .container_login input {
+        .container_login {
+            gap: clamp(0.75rem, 2vh, 1.25rem);
+            padding: clamp(1rem, 4vh, 3rem);
+            height: auto;
+            max-width: min(90vw, 40rem);
+            margin: clamp(6vh, 10vh, 14vh) auto;   
+          }
+      }
+
+.uname,
+.uname-2,
+.container_login input,
+.container_login button,
+.container_login label {
+  width: min(84vw, 32rem);
+}
+
+    .container_login button {
+        font-size: clamp(1rem, 2.6vw, 1.125rem);
+        padding: 0.75em 1.2em;
+        border: none;
+        border-radius: 0.6rem;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+        transition: opacity 0.2s ease;
+      }
