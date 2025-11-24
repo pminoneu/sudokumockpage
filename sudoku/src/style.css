@@ -1,4 +1,3 @@
-
 /* SCORE BOARD */
 
 .score_box {
@@ -69,41 +68,6 @@
 }
 .title {
   margin-bottom: 2vh;         
-}
-
-.hard-layout {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-}
-
-.hard-board {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  margin-top: 8px;
-}
-
-.hard-row {
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  gap: 6px;
-}
-
-.hard-cell {
-  width: 48px;
-  height: 48px;
-  font-size: 20px;
-  text-align: center;
-  border: 2px solid #000;
-  border-radius: 6px;
-  box-sizing: border-box;
-}
-
-.hard-cell:focus {
-  outline: 2px solid #0066ff;
-  outline-offset: 2px;
 }
 
 

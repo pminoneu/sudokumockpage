@@ -21,125 +21,28 @@ Hard game page: sample game page that includes a 9X9 grid (with the appropriate 
 
 </head>
 
+<!-- react CDN scripts -->
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+
 <body>
-
-<div = class="title bebas-neue-regular bebas-neue-regular">
-  <h1>Hard Sudoku</h1>
-</div>
-
-<div class="sudoku-board">
-  <div class="container">
-    <div class="square"></div> <!-- 1 -->
-    <div class="square"></div> <!-- 2 -->
-    <div class="square"></div> <!-- 3 -->
-    <div class="square"></div> <!-- 4 -->
-    <div class="square"></div> <!-- 5 -->
-    <div class="square"></div> <!-- 6 -->
-    <div class="square"></div> <!-- 7 -->
-    <div class="square"></div> <!-- 8 -->
-    <div class="square"></div> <!-- 9 -->
-  </div>
-  <div class="container container-right">
-    <div class="square"></div> <!-- 1 -->
-    <div class="square"></div> <!-- 2 -->
-    <div class="square"></div> <!-- 3 -->
-    <div class="square"></div> <!-- 4 -->
-    <div class="square"></div> <!-- 5 -->
-    <div class="square"></div> <!-- 6 -->
-    <div class="square"></div> <!-- 7 -->
-    <div class="square"></div> <!-- 8 -->
-    <div class="square"></div> <!-- 9 -->
-  </div>
-  <div class="container">
-    <div class="square"></div> <!-- 1 -->
-    <div class="square"></div> <!-- 2 -->
-    <div class="square"></div> <!-- 3 -->
-    <div class="square"></div> <!-- 4 -->
-    <div class="square"></div> <!-- 5 -->
-    <div class="square"></div> <!-- 6 -->
-    <div class="square"></div> <!-- 7 -->
-    <div class="square"></div> <!-- 8 -->
-    <div class="square"></div> <!-- 9 -->
-  </div>
-  <div class="container">
-    <div class="square"></div> <!-- 1 -->
-    <div class="square"></div> <!-- 2 -->
-    <div class="square"></div> <!-- 3 -->
-    <div class="square"></div> <!-- 4 -->
-    <div class="square"></div> <!-- 5 -->
-    <div class="square"></div> <!-- 6 -->
-    <div class="square"></div> <!-- 7 -->
-    <div class="square"></div> <!-- 8 -->
-    <div class="square"></div> <!-- 9 -->
-  </div>
-  <div class="container">
-    <div class="square"></div> <!-- 1 -->
-    <div class="square"></div> <!-- 2 -->
-    <div class="square"></div> <!-- 3 -->
-    <div class="square"></div> <!-- 4 -->
-    <div class="square"></div> <!-- 5 -->
-    <div class="square"></div> <!-- 6 -->
-    <div class="square"></div> <!-- 7 -->
-    <div class="square"></div> <!-- 8 -->
-    <div class="square"></div> <!-- 9 -->
-  </div>
-  <div class="container">
-    <div class="square"></div> <!-- 1 -->
-    <div class="square"></div> <!-- 2 -->
-    <div class="square"></div> <!-- 3 -->
-    <div class="square"></div> <!-- 4 -->
-    <div class="square"></div> <!-- 5 -->
-    <div class="square"></div> <!-- 6 -->
-    <div class="square"></div> <!-- 7 -->
-    <div class="square"></div> <!-- 8 -->
-    <div class="square"></div> <!-- 9 -->
-  </div>
-    <div class="container">
-    <div class="square"></div> <!-- 1 -->
-    <div class="square"></div> <!-- 2 -->
-    <div class="square"></div> <!-- 3 -->
-    <div class="square"></div> <!-- 4 -->
-    <div class="square"></div> <!-- 5 -->
-    <div class="square"></div> <!-- 6 -->
-    <div class="square"></div> <!-- 7 -->
-    <div class="square"></div> <!-- 8 -->
-    <div class="square"></div> <!-- 9 -->
-  </div>
-    <div class="container">
-    <div class="square"></div> <!-- 1 -->
-    <div class="square"></div> <!-- 2 -->
-    <div class="square"></div> <!-- 3 -->
-    <div class="square"></div> <!-- 4 -->
-    <div class="square"></div> <!-- 5 -->
-    <div class="square"></div> <!-- 6 -->
-    <div class="square"></div> <!-- 7 -->
-    <div class="square"></div> <!-- 8 -->
-    <div class="square"></div> <!-- 9 -->
-  </div>
-    <div class="container">
-    <div class="square"></div> <!-- 1 -->
-    <div class="square"></div> <!-- 2 -->
-    <div class="square"></div> <!-- 3 -->
-    <div class="square"></div> <!-- 4 -->
-    <div class="square"></div> <!-- 5 -->
-    <div class="square"></div> <!-- 6 -->
-    <div class="square"></div> <!-- 7 -->
-    <div class="square"></div> <!-- 8 -->
-    <div class="square"></div> <!-- 9 -->
+  <div class="title bebas-neue-regular bebas-neue-regular">
+    <h1>Hard Sudoku</h1>
   </div>
 
+  <!-- replacing static board markup with mount element -->
+  <div id="root"></div>
 
-  <div class="timer">00:59
+  <div class="sidenav bebas-neue-regular sidenav-font">
+    <a href="https://pminoneu.github.io/sudokumockpage/index">Home</a>
+    <a href="https://pminoneu.github.io/sudokumockpage/login_page">Login</a>
+    <a class="active" href="https://pminoneu.github.io/sudokumockpage/select_game_page/">Play</a>
+    <a href="https://pminoneu.github.io/sudokumockpage/rules/">Rules</a>
+    <a href="https://pminoneu.github.io/sudokumockpage/scoreboard/">Scoreboard</a>
   </div>
 
-
-<div class="sidenav bebas-neue-regular sidenav-font">
-  <a href="https://pminoneu.github.io/sudokumockpage/index">Home</a>
-  <a href="https://pminoneu.github.io/sudokumockpage/login_page">Login</a>
-  <a class="active" href="https://pminoneu.github.io/sudokumockpage/select_game_page/">Play</a>
-  <a href="https://pminoneu.github.io/sudokumockpage/rules/">Rules</a>
-  <a href="https://pminoneu.github.io/sudokumockpage/scoreboard/">Scoreboard</a>
-</div>
-
+  <!-- This loads the component file -->
+  <script src="../sudoku_components.js"></script>
 </body>
 </html>
